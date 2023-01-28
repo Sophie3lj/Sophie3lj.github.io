@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Sophie Ljubicic</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+        <script src="https://kit.fontawesome.com/61219769e9.js" crossorigin="anonymous"></script>
+        <script src="main.js"></script>
+    </head>
+    <body>
+        <div class="container-fluid main">
+            <div class="row">
+                <div id="nav-bar" class="col-sm-3 nav-bar-container about-me-select">
+                    <ul class="nav nav-bar">
+                        <li id="about-me-nav-item" class="nav-item selected" onclick="scrollToAboutMe()">
+                            <div class="container-fluid nav-content">
+                                <div class="nav-text">About Me</div>
+                            </div>
+                        </li>
+                        <li id="education-nav-item"class="nav-item" onclick="scrollToEducation()">
+                            <div class="container-fluid nav-content">
+                                <div class="nav-text">Education</div>
+                            </div>
+                        </li>
+                        <li id="experience-nav-item" class="nav-item" onclick="scrollToExperience()">
+                            <div class="container-fluid nav-content">
+                                <div class="nav-text">Experience</div>
+                            </div>
+                        </li>
+                        <li id="projects-nav-item" class="nav-item" onclick="scrollToProjects()">
+                            <div class="container-fluid nav-content">
+                                <div class="nav-text">Projects</div>
+                            </div>
+                        </li>
+                        <li id="contact-nav-item" class="nav-item" onclick="scrollToContact()">
+                            <div class="container-fluid nav-content">
+                                <div class="nav-text">Contact</div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-sm-9 main-container" onscroll="test()">
+                    <div class="container-fluid main">
+                        <div id="about-me" class="row about-me section">
+                            <div class="col-sm-4 image-container-container">
+                                <div class="image-container profile"></div>
+                            </div>
+                            <div class="col-sm-8 content">
+                                <h1 class="section-heading">Sophie Ljubicic</h1>
+                                <p class="section-text">
+                                    A creative and enthusiastic individual, I consistently tackle all problems with a positive attitude and a willingness to learn. I’m currently undertaking my final year of study in a double degree of Electrical and Electronic Engineering and Mathematical and Computer Science at the University of Adelaide and am consistently achieving top results. 
+                                </p>
+                                <p class="section-text">
+                                    I have a particular interest in software development and computer science, solidified by my current position as an Undergraduate Software Engineer at Fivecast where I have experience in full stack Software Development. 
+                                </p>
+                                <p class="section-text-no-space">
+                                    I have experience in several programming languages, including:
+                                </p>
+                                <p class="section-text">
+                                    C | C++ | Java | Javascript / Typescript | Python | HTML | CSS | SQL | Matlab
+                                </p>
+                                <p class="section-text">
+                                    I'm hard working and dedicated to producing the highest quality work possible. Additionally, I'm skilled in the areas of organisation, communication, problem solving and leadership.
+                                </p>
+                                <div class="button-container">
+                                    <button class="button" onclick="window.open('files/resume.pdf');">Resume</button>
+                                    <button class="button" onclick="window.open('https://www.linkedin.com/in/sophie-ljubicic/');">LinkedIn</button>
+                                    <button class="button" onclick="window.open('https://github.com/Sophie3lj');">GitHub</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="education" class="row education section">
+                            <div class="col-sm-4 image-container-container">
+                                <div class="image-container adelaide-uni"></div>
+                            </div>
+                            <div class="col-sm-8 content">
+                                <h1 class="section-heading">The Universtity of Adelaide</h1>
+                                <p class="section-text date">Mar 2018 - Jul 2023</p>
+                                <p class="section-text-no-space">Bachelor of Engineering (Electrical and Electronic) (Computer Engineering Major), with</p>
+                                <p  class="section-text">Bachelor of Mathematical and Computer Science (Computer Science Major)</p>
+                                <div class="section-text">
+                                    <ul>
+                                        <li>
+                                            <span>GPA: 6.676</span>
+                                        </li>
+                                        <li>
+                                            <span>Recognised in the top 15% of student by the Golden Key International Honours Society.</span>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="button-container">
+                                    <button class="button" onclick="window.open('https://www.adelaide.edu.au/degree-finder/2023/bedmo_behe&ed4.html');">Degree Page</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="experience" class="row section fivecast">
+                            <div class="col-sm-4 image-container-container">
+                                <div class="image-container fivecast"></div>
+                            </div>
+                            <div class="col-sm-8 content">
+                                <h1 class="section-heading">Fivecast</h1>
+                                <h2 class="section-sub-heading">Undergraduate Software Engineer</h2>
+                                <p class="section-text date">Mar 2022 - Present</p>
+                                <div class="section-text">
+                                    <ul>
+                                        <li>
+                                            <span>Worked in the product development team creating Fivecast ONYX Vetting, an automated solution providing intelligence insights in security vetting applications.</span>
+                                        </li>
+                                        <li>
+                                            <span>Worked in the product development team creating Fivecast ONYX, a scaleable solution providing the targeted, automated collection of information and AI-enabled risk assessment.</span>
+                                        </li>
+                                        <li>
+                                            <span>Full stack software development using TypeScript (React), Java, PostgreSQL and Elasticsearch.</span>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <h2 class="section-sub-heading">Software Engineering Intern</h2>
+                                <p class="section-text date">Nov 2021 - Mar 2022</p>
+                                <div class="section-text">
+                                    <ul>
+                                        <li>
+                                            <span>Worked in the product development team creating Fivecast ONYX, a scaleable solution providing the targeted, automated collection of information and AI-enabled risk assessment.</span>
+                                        </li>
+                                        <li>
+                                            <span>Full stack software development using TypeScript (React), Java, PostgreSQL and Elasticsearch.</span>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="button-container">
+                                    <button class="button" onclick="window.open('https://www.fivecast.com/');">Website</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row section etrain">
+                            <div class="col-sm-4 image-container-container">
+                                <div class="image-container etrain"></div>
+                            </div>
+                            <div class="col-sm-8 content">
+                                <h1 class="section-heading dark-text">Etrain Interactive</h1>
+                                <h2 class="section-sub-heading dark-text">Content Developer</h2>
+                                <p class="section-text dark-text date">Jul 2021 - Nov 2021</p>
+                                <div class="section-text dark-text">
+                                    <ul>
+                                        <li>
+                                            <span>Assisted in coding features for the Unity game engine to aid in the development of nursing simulation training modules.</span>
+                                        </li>
+                                        <li>
+                                            <span>Restructured and reviewed nursing simulation training modules for consistency and clarity.</span>
+                                        </li>
+                                        <li>
+                                            <span>Edited instructional documentation to optimise comprehension.</span>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="button-container">
+                                    <button class="button dark-text" onclick="window.open('https://etrain-interactive.com/');">Website</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="experience-end" class="row education section">
+                            <div class="col-sm-4 image-container-container">
+                                <div class="image-container adelaide-uni"></div>
+                            </div>
+                            <div class="col-sm-8 content">
+                                <h1 class="section-heading">The Universtity of Adelaide</h1>
+                                <h2 class="section-sub-heading">Peer Assisted Study Sessions (PASS) Leader</h2>
+                                <p class="section-text date">Feb 2019 - Dec 2019</p>
+                                <div class="section-text">
+                                    <ul>
+                                        <li>
+                                            <span>Organised and facilitated twice weekly sessions to assist university students in understanding their programming coursework.</span>
+                                        </li>
+                                        <li>
+                                            <span>Communicated with course coordinators to plan the content covered in PASS sessions.</span>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="button-container">
+                                    <button class="button" onclick="window.open('https://www.adelaide.edu.au/pass/');">Website</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="projects" class="row rover section">
+                            <div class="col-sm-4 image-container-container">
+                                <div class="image-container rover"></div>
+                            </div>
+                            <div class="col-sm-8 content">
+                                <h1 class="section-heading">Australian Rover Challenge</h1>
+                                <h2 class="section-sub-heading">Adelaide Rover Team GUI</h2>
+                                <p class="section-text">
+                                    Worked in a small team to create a web-based GUI to communicate with the Adelaide Rover Team’s moon rover. Utilised JavaScript and Node.js to develop the front- and back-end functionality along with HTML and CSS to develop the user interface. Utilised RosBridge and the ROS JavaScript library to develop communication methods between the GUI and the rover.
+                                </p>
+                                <div class="button-container">
+                                    <button class="button" onclick="window.open('https://github.com/Sophie3lj/AdelaideRoverTeamGUI');">GitHub</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row covid-19 section">
+                            <div class="col-sm-4 image-container-container">
+                                <div class="image-container covid-19"></div>
+                            </div>
+                            <div class="col-sm-8 content">
+                                <h1 class="section-heading">COVID-19 Contact Tracing Website</h1>
+                                <p class="section-text">
+                                    Worked as a group to create a COVID-19 contact tracing website with full login and venue/location-based check-in capabilities. Specific contributions include the check-in page and map page UI and functionality which tracks and displays all relevant check-ins for different user types. The website was coded using HTML, CSS and JavaScript with Node.js and a MySQL database.
+                                </p>
+                                <div class="button-container">
+                                    <button class="button" onclick="window.open('https://github.com/Sophie3lj/COVID-19ContactTracingApp');">GitHub</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="projects-end" class="row education section">
+                            <div class="col-sm-4 image-container-container">
+                                <div class="image-container adelaide-uni"></div>
+                            </div>
+                            <div class="col-sm-8 content">
+                                <h1 class="section-heading">Honours Project</h1>
+                                <h2 class="section-sub-heading">Constrained Cooperative Agent Creation Using Grammatical Evolution</h2>
+                                <p class="section-text">
+                                    In a small group investigated the use of Grammatical Evolution (GE) as a method for the creation of cooperative agents using the card game The Crew as a model. Wrote code in Python to develop the game environment and model and train the agents with GE. Resulted in agents able to play The Crew at a higher win rate than comparable machine learning and hard coded methods.
+                                </p>
+                                <div class="button-container">
+                                    <button class="button" onclick="window.open('https://www.youtube.com/watch?v=tyW_sAkx44Q&list=PLPwZ9tODf5HjatPX8s56MSjEBJE7BHSrT&index=58');">Ingenuity Video</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="contact" class="row contact section">
+                            <div class="col-sm-12 content">
+                                <h1 class="section-heading">Contact</h1>
+                                <div class="section-text-underline">
+                                    Feel free to get in contact with me via email or LinkedIn, or view my work on GitHub!
+                                </div>
+                                <div class="section-text contact-item" onclick="window.open('mailto:alldecimalshaveapoint@gmail.com');">
+                                    <i class="fa fa-envelope" aria-hidden="true"></i>
+                                    alldecimalshaveapoint@gmail.com
+                                </div>
+                                <div class="section-text contact-item" onclick="window.open('https://www.linkedin.com/in/sophie-ljubicic/');">
+                                    <i class="fa fa-linkedin-square" aria-hidden="true"></i>
+                                    linkedin.com/in/sophie-ljubicic/
+                                </div>
+                                <div class="section-text contact-item" onclick="window.open('https://github.com/Sophie3lj');">
+                                    <i class="fa fa-github-square" aria-hidden="true"></i>
+                                    github.com/Sophie3lj
+                                </div>
+                            </div>
+                        </div>
+                        <div id="footer" class="row footer section">
+                            <div class="col-sm-12 content">
+                                <div class="section-text-no-space">Profile Website by Sophie Ljubicic</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </body>
+</html>
