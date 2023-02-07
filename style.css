@@ -119,6 +119,10 @@ body {
         background-position: center center;
     }
 
+    .image-container.sorting-algorithm {
+        background-position: center center;
+    }
+
     .col-sm-8.content {
         display: flex;
         flex-wrap: wrap;
@@ -225,6 +229,10 @@ body {
     .image-container.rover {
         background-position: center center;
     }
+
+    .image-container.sorting-algorithm {
+        background-position: center center;
+    }
 }
 
 .nav-text {
@@ -267,6 +275,10 @@ body {
 
 .education>.col-sm-4.image-container-container {
     background-color: #102535;
+}
+
+.sorting-algorithm>.col-sm-4.image-container-container {
+    background-color: #16191d;
 }
 
 .etrain>.col-sm-4.image-container-container {
@@ -326,6 +338,12 @@ body {
     background-repeat: no-repeat;
 }
 
+.image-container.sorting-algorithm {
+    background-image: url("images/sorting.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
 .section.row {
     display: flex;
     flex-wrap: wrap;
@@ -344,6 +362,10 @@ body {
 
 .education.section.row {
     background-color: #223442;
+}
+
+.sorting-algorithm.section.row {
+    background-color: #354e5e;
 }
 
 .fivecast.section.row {
